@@ -76,7 +76,7 @@ public class RecordingAppender extends
 	private void dump(ILoggingEvent event) {
 		final Iterator<Appender<ILoggingEvent>> iter = iteratorForAppenders();
 		while (iter.hasNext()) {
-			iter.next().doAppend(event);
+		    iter.next().doAppend(event);
 		}
 	}
 
